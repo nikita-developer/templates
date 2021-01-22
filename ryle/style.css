@@ -1,8 +1,3 @@
-
-body {
-    margin: 0
-}
-
 .ryle {
     position: fixed;
     top: 0;
@@ -379,7 +374,6 @@ body {
 }
 
 .all-form {
-    display: none;
     font-family: sans-serif;
     width: 100%;
     max-width: 620px;
@@ -411,7 +405,7 @@ body {
     margin-top: 15px;
     background-color: #fff;
     -webkit-box-shadow: 4px 5px 10px 0px rgba(0, 0, 0, 0.25);
-            box-shadow: 4px 5px 10px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 5px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
 .all-form__title {
@@ -443,27 +437,32 @@ body {
     border-radius: 3px;
     padding: 10px;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .all-form__footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
     -ms-align-items: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 40px;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .all-form__btn {
+    width: 100%;
+    max-width: 320px;
+    flex: 1 0 100%;
     padding: 15px 40px;
     border-radius: 3px;
     text-align: center;
     color: #fff;
     text-transform: uppercase;
-    margin-right: 40px;
+    margin: 10px 20px 10px 0;
     background-color: #53b57f;
     background: rgb(90,188,134);
     background: -o-linear-gradient(top, rgba(90,188,134,1) 0%, rgba(66,163,110,1) 50%);
@@ -481,34 +480,44 @@ body {
     text-indent: 10px;
     padding-right: 30px;
     -webkit-box-shadow: inset 10px 0px 20px 0px rgba(0, 0, 0, .4);
-            box-shadow: inset 10px 0px 20px 0px rgba(0, 0, 0, .4);
+    box-shadow: inset 10px 0px 20px 0px rgba(0, 0, 0, .4);
+}
+
+.all-form__prices {
+    max-width: 180px;
+    flex: 1 0 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .all-form__price-new {
     margin-right: 15px;
     color: #49aa75;
     font-size: 20px;
+    max-width: 80px;
+    flex: 1 0 100%;
 }
 
 .all-form__price-old {
     font-size: 14px;
     color: #8c8c8c;
     text-decoration: line-through;
+    max-width: 60px;
+    flex: 1 0 100%;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
     .all-form__footer {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
     }
 
     .all-form__btn {
-        width: 100%;
         margin-right: 0;
-        margin-bottom: 20px;
         font-size: 15px;
     }
 

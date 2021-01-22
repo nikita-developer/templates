@@ -1,0 +1,13 @@
+.order {
+    display: block;
+    text-align: center;
+    background-color: #001aa3;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px auto;
+    max-width: 305px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+}

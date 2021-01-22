@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+.privacyAndCoockie #privacy.privacy,
+.privacyAndCoockie #coockie.coockie,
+.privacyAndCoockie #privacy.privacy *,
+.privacyAndCoockie #coockie.coockie {
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.privacyAndCoockie #coockie.coockie {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 90;
+    background-color: rgba(50, 50, 50, 0.9);
+    padding: 15px;
+}
+
+.privacyAndCoockie #coockie .coockie__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.privacyAndCoockie #coockie .coockie__info {
+    margin-right: 20px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.privacyAndCoockie #coockie .coockie__close {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: .5rem;
+    background-color: #850000;
+    white-space: nowrap;
+    color: #fff;
+    transition: .3s;
+}
+
+.privacyAndCoockie #coockie .coockie__close:hover {
+    background-color: red;
+}
+
+#modal.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.privacyAndCoockie #privacy.privacy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 768px;
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-align: left;
+}
+
+.privacyAndCoockie #privacy .privacy__content {
+    height: 80vh;
+    overflow-y: auto;
+    padding: 0 15px 15px 15px;
+}
+
+.privacyAndCoockie #privacy .privacy__content h1 {
+    margin-right: 35px;
+    font-size: 36px;
+    color: #454545;
+    margin-bottom: 10px;
+    line-height: 35px;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+.privacyAndCoockie #privacy .privacy__content h2 {
+    font-size: 22px;
+    color: #727272;
+    margin-bottom: 10px;
+    line-height: 22px;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+.privacyAndCoockie #privacy .privacy__content p {
+    font-size: 16px;
+    color: #454545;
+    margin-bottom: 5px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.privacyAndCoockie #privacy .privacy__content a {
+    font-size: 16px;
+    color: #1017ec;
+    margin-bottom: 5px;
+    line-height: 20px;
+    font-weight: 400;
+    text-decoration: underline;
+    letter-spacing: 0;
+}
+
+.privacyAndCoockie #privacy .privacy__content p + h2 {
+    margin-top: 20px;
+}
+
+.privacyAndCoockie #privacy .privacy__close {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin-left: auto;
+    background-color: #efefef;
+    cursor: pointer;
+    transition: .3s;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.privacyAndCoockie #privacy .privacy__close span {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    width: calc(100% - 10px);
+    height: 2px;
+    background-color: #fff;
+    transition: .3s transform;
+    margin-top: -1px;
+    box-shadow: 0 0 2px #757575;
+}
+
+.privacyAndCoockie #privacy .privacy__close:hover {
+    background-color: #dadada;
+}
+
+.privacyAndCoockie #privacy .privacy__close:hover span:first-child {
+    transform: rotate(135deg);
+}
+
+.privacyAndCoockie #privacy .privacy__close:hover span:last-child {
+    transform: rotate(220deg);
+}
+
+.privacyAndCoockie #privacy .privacy__close span:first-child {
+    transform: rotate(45deg);
+}
+
+.privacyAndCoockie #privacy .privacy__close span:last-child {
+    transform: rotate(135deg);
+}
+
+@media(max-width: 768px) {
+    .privacyAndCoockie #privacy .privacy__close {
+        right: 15px;
+    }
+
+    .privacyAndCoockie #coockie .coockie__wrap {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .privacyAndCoockie #coockie .coockie__info {
+        margin-right: 0;
+        line-height: 18px;
+    }
+
+    .privacyAndCoockie #coockie .coockie__close {
+        margin-top: 15px;
+    }
+}
